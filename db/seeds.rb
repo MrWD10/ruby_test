@@ -1,6 +1,6 @@
 10.times do |blog|
     Blog.create!(
-        title: "My Blog POst #{blog}",
+        title: "My Blog Post #{blog}",
         body: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, 
         eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem 
         quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
@@ -11,7 +11,7 @@
     )
 end
 
-put "10 Blog post created"
+puts "10 Blog post created"
 
 5.times do |tech|
     Tech.create!(
@@ -20,7 +20,7 @@ put "10 Blog post created"
     )
 end
 
-put "5 Skills created"
+puts "5 Skills created"
 
 9.times do |pf|
     Portfolio.create!(
@@ -37,4 +37,4 @@ put "5 Skills created"
 end
 
 
-put "9 Portfolio items created"
+puts "9 Portfolio items created"
