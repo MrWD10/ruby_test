@@ -1,5 +1,7 @@
 class Portfolio < ApplicationRecord
     has_many :technalogies
+    resourcify
+    has_many :users, through: :roles, class_name: 'User', source: :users
     accepts_nested_attributes_for :technalogies, 
                      reject_if: lambda {|attrs| attrs ['name'].blank?}
 
